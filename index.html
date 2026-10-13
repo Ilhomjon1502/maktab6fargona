@@ -109,6 +109,47 @@
     .course .icon { font-size: 30px; }
     .course h3 { font-size: 19px; margin-top: 8px; }
     .course p { color: var(--muted); font-size: 15px; margin-top: 4px; }
+    .course { display: flex; flex-direction: column; }
+    .meta {
+      margin-top: auto;
+      padding-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+    .price { font-size: 18px; font-weight: 800; color: var(--blue-600); }
+    .price small { font-size: 14px; font-weight: 500; color: var(--muted); }
+    .tag {
+      font-size: 13px;
+      font-weight: 600;
+      background: #e0f2fe;
+      color: var(--blue-900);
+      border-radius: 999px;
+      padding: 3px 10px;
+    }
+
+    .socials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin-top: 24px;
+    }
+    .social {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px;
+      font-weight: 700;
+      transition: border-color .15s ease;
+    }
+    .social:hover, .social:focus-visible { border-color: var(--blue-600); }
+    .social svg { flex: none; width: 32px; height: 32px; }
+    .social span small { display: block; font-weight: 400; color: var(--muted); font-size: 14px; }
 
     .steps { list-style: none; margin-top: 24px; display: grid; gap: 12px; }
     .steps li {
@@ -163,11 +204,11 @@
     <section>
       <div class="wrap">
         <h2>Codial nima?</h2>
-        <p class="lead">Codial — Farg'ona vodiysidagi IT akademiya. U 2021-yilda Inha universiteti bitiruvchisi tomonidan tashkil etilgan. Maqsadi — viloyatdagi yoshlarga zamonaviy IT kasblarini o'rgatish, poytaxtga bormasdan ham dasturchi bo'lish imkonini berish.</p>
+        <p class="lead">Codial — Farg'ona shahridagi IT akademiya. U 2021-yilda Inha universiteti bitiruvchisi tomonidan tashkil etilgan. Maqsadi — viloyatdagi yoshlarga zamonaviy IT kasblarini o'rgatish, poytaxtga bormasdan ham dasturchi bo'lish imkonini berish.</p>
         <div class="facts">
           <div class="fact"><b>2021</b><span>yildan beri ta'lim beradi</span></div>
           <div class="fact"><b>14–25</b><span>yoshdagi o'quvchilar uchun</span></div>
-          <div class="fact"><b>Farg'ona</b><span>va Marg'ilonda filiallar</span></div>
+          <div class="fact"><b>Farg'ona</b><span>shahrida joylashgan</span></div>
         </div>
       </div>
     </section>
@@ -177,29 +218,46 @@
         <h2>Nimalarni o'rganasan?</h2>
         <div class="courses">
           <div class="course">
-            <div class="icon">🌐</div>
-            <h3>Frontend</h3>
-            <p>Chiroyli saytlar yasash: HTML, CSS, JavaScript.</p>
+            <div class="icon">🤖</div>
+            <h3>Vibe coding</h3>
+            <p>Sun'iy intellekt (AI) yordamida sayt va ilovalar yasashni o'rganish.</p>
+            <div class="meta">
+              <span class="price">750 000 so'm <small>/ oy</small></span>
+              <span class="tag">6 oy</span>
+            </div>
           </div>
           <div class="course">
             <div class="icon">⚙️</div>
             <h3>Backend</h3>
             <p>Saytlar va ilovalarning “miya” qismi: server va ma'lumotlar bazasi.</p>
+            <div class="meta">
+              <span class="price">750 000 so'm <small>/ oy</small></span>
+            </div>
           </div>
           <div class="course">
             <div class="icon">📱</div>
-            <h3>Android</h3>
-            <p>Telefon uchun o'z ilovangni yaratish.</p>
+            <h3>Flutter</h3>
+            <p>Bitta kod bilan Android va iPhone uchun mobil ilovalar yaratish.</p>
+            <div class="meta">
+              <span class="price">750 000 so'm <small>/ oy</small></span>
+            </div>
           </div>
           <div class="course">
-            <div class="icon">🎨</div>
-            <h3>Grafik dizayn</h3>
-            <p>Logo, post va bannerlar chizish.</p>
+            <div class="icon">📣</div>
+            <h3>SMM</h3>
+            <p>Instagram va Telegram sahifalarini yuritish, ijtimoiy tarmoqlarda reklama.</p>
+            <div class="meta">
+              <span class="price">750 000 so'm <small>/ oy</small></span>
+            </div>
           </div>
           <div class="course">
             <div class="icon">💻</div>
             <h3>Kompyuter savodxonligi</h3>
             <p>Kompyuter bilan ishlashni noldan boshlash.</p>
+            <div class="meta">
+              <span class="price">500 000 so'm <small>/ oy</small></span>
+              <span class="tag">1 oy</span>
+            </div>
           </div>
         </div>
       </div>
@@ -218,6 +276,26 @@
 
     <section style="padding-top:0">
       <div class="wrap">
+        <h2>Codialni kuzatib bor</h2>
+        <div class="socials">
+          <a class="social" href="https://t.me/codialuz" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#29a9eb"/><path fill="#fff" d="M5.4 11.7l11.6-4.5c.5-.2 1 .1.8 1l-2 9.3c-.1.6-.5.8-1 .5l-3-2.2-1.5 1.4c-.2.2-.3.3-.6.3l.2-3.1 5.6-5c.2-.2 0-.3-.4-.1l-6.9 4.3-3-.9c-.6-.2-.7-.6.2-1z"/></svg>
+            <span>Telegram<small>@codialuz</small></span>
+          </a>
+          <a class="social" href="https://instagram.com/codialuz" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="ig" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#f9a825"/><stop offset=".5" stop-color="#e91e63"/><stop offset="1" stop-color="#7b1fa2"/></linearGradient></defs><rect width="24" height="24" rx="6" fill="url(#ig)"/><rect x="5.5" y="5.5" width="13" height="13" rx="4" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="12" cy="12" r="3.2" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="16.1" cy="7.9" r="1" fill="#fff"/></svg>
+            <span>Instagram<small>@codialuz</small></span>
+          </a>
+          <a class="social" href="https://youtube.com/@Codialuz" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect y="3" width="24" height="18" rx="5" fill="#ff0000"/><path fill="#fff" d="M10 8.5v7l6-3.5z"/></svg>
+            <span>YouTube<small>@Codialuz</small></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top:0">
+      <div class="wrap">
         <div class="cta">
           <h2>Seni darsda kutamiz!</h2>
           <p>Hoziroq yozilib qo'y — 1 daqiqa ham ketmaydi.</p>
@@ -229,8 +307,7 @@
 
   <footer>
     <div class="wrap">
-      6-maktab, Farg'ona · Codial IT akademiyasi ·
-      <a href="https://www.youtube.com/@Codialuz" target="_blank" rel="noopener">YouTube</a>
+      6-maktab, Farg'ona · Codial IT akademiyasi
     </div>
   </footer>
 
