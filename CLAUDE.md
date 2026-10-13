@@ -31,6 +31,7 @@ Commit xabarlari o'zbek tilida yoziladi. Push qilishga foydalanuvchi oldindan ru
 - `index.html` — butun sayt, CSS ichida. Tashqi kutubxona, framework, JS yo'q — shunday qolsin (maktab internetida ham tez ochilsin).
 - `img/codial-white.png` — oq logo (to'q fon uchun, hero'da).
 - `img/codial.png` — rangli logo (oq fon uchun, footer'da).
+- `img/tadbir/` — 2026-10-13 dagi tadbir rasmlari (WebP, ≤1200px, metadata'siz). `iqtidorlilar-*` — "Eng iste'dodlilar" bo'limi, `tadbir-*` — "Tadbirdan lavhalar" galereyasi. Yangi rasm qo'shsang, shu tarzda kichraytir. O'quvchilarning ism-familiyasini sayt matniga yozma.
 - `qr/qr-maktab6.png` (2000px), `qr/qr-maktab6.svg` — pechat uchun QR kod. Manzil o'zgarmagani uchun qayta yaratish shart emas.
 
 ## Uslub
@@ -58,6 +59,7 @@ Commit xabarlari o'zbek tilida yoziladi. Push qilishga foydalanuvchi oldindan ru
   Narxlar **oylik** (foydalanuvchi tasdiqlagan) — saytda "/ oy" deb ko'rsatiladi.
 - Ijtimoiy tarmoqlar: Telegram https://t.me/codialuz · Instagram https://instagram.com/codialuz · YouTube https://youtube.com/@Codialuz
 - Rasmiy veb-sayt yo'q (codial.uz ishlamaydi) — havola qo'yma.
+- Tadbirda (2026-10-13) eng iste'dodli o'quvchilarga **Kompyuter savodxonligi** kursi uchun 100% va 50% bonus sertifikatlari berildi. Ishlatish tartibi (tadbirdagi slayddan): sertifikatni oladi → ota-onasi bilan Codial'ga keladi → bepul sinov darsiga yoziladi; bonus **7 kun** ichida amal qiladi.
 
 ## Darsga yozilish formasi
 

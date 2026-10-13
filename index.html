@@ -188,6 +188,34 @@
     }
     .cta p { opacity: .9; margin-top: 8px; }
 
+    /* Tadbir rasmlari */
+    .photos { display: grid; gap: 12px; margin-top: 24px; }
+    .photos.two { grid-template-columns: 1fr 1fr; }
+    @media (min-width: 720px) { .photos.duo { grid-template-columns: 1fr 1fr; } }
+    figure { margin: 0; }
+    .photos img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      background: var(--line);
+    }
+    figcaption { color: var(--muted); font-size: 14px; margin-top: 6px; }
+
+    .bonus {
+      background: linear-gradient(135deg, #fff7e6, #ffffff);
+      border: 2px solid var(--accent);
+      border-radius: 20px;
+      padding: 24px 20px;
+    }
+    .bonus .steps li { border-color: #ffe2b0; }
+    .bonus .num { background: var(--accent); color: var(--ink); }
+    .note {
+      margin-top: 14px;
+      font-weight: 700;
+      color: #9a5b00;
+    }
+
     footer {
       text-align: center;
       color: var(--muted);
@@ -211,6 +239,38 @@
 
   <main>
     <section>
+      <div class="wrap">
+        <h2>🏆 Eng iste'dodlilar</h2>
+        <p class="lead">6-maktabdagi tadbirda o'zini eng yaxshi ko'rsatgan o'quvchilar Codial'dan <b>100%</b> va <b>50%</b> bonus sertifikatlari bilan taqdirlandi. Tabriklaymiz!</p>
+        <div class="photos duo">
+          <figure>
+            <img src="img/tadbir/iqtidorlilar-1.webp" alt="Bonus sertifikatlarini olgan o'quvchilar sahnada" width="1200" height="900">
+            <figcaption>100% va 50% bonus sertifikati sohiblari</figcaption>
+          </figure>
+          <figure>
+            <img src="img/tadbir/iqtidorlilar-2.webp" alt="O'quvchi 50% bonus sertifikati bilan Codial ustozlari yonida" width="1200" height="900" loading="lazy">
+            <figcaption>Kompyuter savodxonligi kursiga 50% bonus</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top:0">
+      <div class="wrap">
+        <div class="bonus">
+          <h2>🎁 Sertifikat oldingmi?</h2>
+          <p class="lead">Bonus <b>Kompyuter savodxonligi</b> kursi uchun amal qiladi. Undan foydalanish oson:</p>
+          <ol class="steps">
+            <li><span class="num">1</span><div><b>Sertifikatni ol</b> — sen buni allaqachon qilding ✔</div></li>
+            <li><span class="num">2</span><div><b>Ota-onang bilan Codial'ga kel.</b></div></li>
+            <li><span class="num">3</span><div><b>Bepul sinov darsiga yozil.</b></div></li>
+          </ol>
+          <p class="note">⏰ Diqqat: bonus 7 kun ichida amal qiladi — kechiktirma!</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top:0">
       <div class="wrap">
         <h2>Codial nima?</h2>
         <p class="lead">Codial — Farg'ona shahridagi IT akademiya. U 2021-yilda Inha universiteti bitiruvchisi tomonidan tashkil etilgan. Maqsadi — viloyatdagi yoshlarga zamonaviy IT kasblarini o'rgatish, poytaxtga bormasdan ham dasturchi bo'lish imkonini berish.</p>
@@ -287,6 +347,26 @@
           <li><span class="num">2</span><div><b>Ismingni, telefon raqamingni va sinfingni yoz.</b><br>Notebook (kompyuter) bor-yo'qligini ham belgila.</div></li>
           <li><span class="num">3</span><div><b>“Yuborish” tugmasini bos.</b><br>Codial jamoasi sen bilan bog'lanadi.</div></li>
         </ol>
+      </div>
+    </section>
+
+    <section style="padding-top:0">
+      <div class="wrap">
+        <h2>📸 Tadbirdan lavhalar</h2>
+        <p class="lead">6-maktab o'quvchilari bilan Codial tadbiri bo'lib o'tdi.</p>
+        <div class="photos">
+          <figure>
+            <img src="img/tadbir/tadbir-1.webp" alt="Majlislar zalida Codial tadbirida o'tirgan o'quvchilar" width="1200" height="900" loading="lazy">
+          </figure>
+        </div>
+        <div class="photos two" style="margin-top:12px">
+          <figure>
+            <img src="img/tadbir/tadbir-2.webp" alt="Codial ustozi o'quvchilarga savol bermoqda" width="900" height="1200" loading="lazy">
+          </figure>
+          <figure>
+            <img src="img/tadbir/tadbir-3.webp" alt="Tadbirni tinglayotgan o'quvchilar" width="900" height="1200" loading="lazy">
+          </figure>
+        </div>
       </div>
     </section>
 
