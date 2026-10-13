@@ -53,8 +53,9 @@ Commit xabarlari o'zbek tilida yoziladi. Push qilishga foydalanuvchi oldindan ru
   | Backend | 750 000 so'm | — |
   | Flutter | 750 000 so'm | — |
   | SMM | 750 000 so'm | — |
+  | Kiberxavfsizlik | 750 000 so'm | — |
 
-  Saytda narxlar "/ oy" (oylik) deb ko'rsatilgan — bu taxmin, foydalanuvchi hali aniq tasdiqlamagan.
+  Narxlar **oylik** (foydalanuvchi tasdiqlagan) — saytda "/ oy" deb ko'rsatiladi.
 - Ijtimoiy tarmoqlar: Telegram https://t.me/codialuz · Instagram https://instagram.com/codialuz · YouTube https://youtube.com/@Codialuz
 - Rasmiy veb-sayt yo'q (codial.uz ishlamaydi) — havola qo'yma.
 
