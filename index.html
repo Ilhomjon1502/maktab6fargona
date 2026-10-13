@@ -7,15 +7,16 @@
   <meta name="description" content="Farg'ona 6-maktab o'quvchilari uchun Codial IT akademiyasida dasturlash darslari. Darsga yozilish.">
   <style>
     :root {
-      --blue-900: #1e3a8a;
-      --blue-600: #2563eb;
-      --sky-400: #38bdf8;
+      /* Codial brend ranglari: logodagi ko'k #00527E va to'q sariq #FF9F00 */
+      --blue-900: #003a5a;
+      --blue-600: #00527e;
+      --sky-400: #0a7fb8;
       --ink: #0f172a;
       --muted: #475569;
       --bg: #f8fafc;
       --card: #ffffff;
       --line: #e2e8f0;
-      --accent: #f59e0b;
+      --accent: #ff9f00;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
@@ -51,7 +52,14 @@
       line-height: 1.05;
       margin-top: 20px;
     }
-    .hero h1 .x { opacity: .6; font-weight: 400; }
+    .hero h1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+    .hero h1 .x { opacity: .6; font-weight: 400; font-size: .7em; line-height: 1; }
+    .hero h1 .logo { width: min(300px, 72vw); height: auto; margin: 6px 0 10px; }
     .hero p {
       font-size: clamp(17px, 4.5vw, 20px);
       max-width: 560px;
@@ -123,7 +131,7 @@
     .tag {
       font-size: 13px;
       font-weight: 600;
-      background: #e0f2fe;
+      background: #e3f0f7;
       color: var(--blue-900);
       border-radius: 999px;
       padding: 3px 10px;
@@ -187,6 +195,7 @@
       padding: 8px 0 40px;
     }
     footer a { color: var(--blue-600); }
+    footer .logo { display: block; width: 140px; height: auto; margin: 0 auto 10px; }
   </style>
 </head>
 <body>
@@ -194,7 +203,7 @@
   <header class="hero">
     <div class="wrap">
       <span class="badge">Faqat 6-maktab o'quvchilari uchun</span>
-      <h1>6-maktab <span class="x">×</span> Codial</h1>
+      <h1><span>6-maktab</span><span class="x">×</span><img class="logo" src="img/codial-white.png" alt="Codial" width="715" height="172"></h1>
       <p>Dasturlashni o'rganmoqchimisan? Codial IT akademiyasida darslarga yozil, birinchi saytingni o'zing yasa!</p>
       <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScp8WSYWbmNAnGnI8BsWC_n4uGWP0D1zpC52tTn2b72hFYV5Q/viewform" target="_blank" rel="noopener">Darsga yozilish →</a>
     </div>
@@ -207,7 +216,7 @@
         <p class="lead">Codial — Farg'ona shahridagi IT akademiya. U 2021-yilda Inha universiteti bitiruvchisi tomonidan tashkil etilgan. Maqsadi — viloyatdagi yoshlarga zamonaviy IT kasblarini o'rgatish, poytaxtga bormasdan ham dasturchi bo'lish imkonini berish.</p>
         <div class="facts">
           <div class="fact"><b>2021</b><span>yildan beri ta'lim beradi</span></div>
-          <div class="fact"><b>14–25</b><span>yoshdagi o'quvchilar uchun</span></div>
+          <div class="fact"><b>11 yosh</b><span>dan boshlab o'qish mumkin</span></div>
           <div class="fact"><b>Farg'ona</b><span>shahrida joylashgan</span></div>
         </div>
       </div>
@@ -223,7 +232,6 @@
             <p>Sun'iy intellekt (AI) yordamida sayt va ilovalar yasashni o'rganish.</p>
             <div class="meta">
               <span class="price">750 000 so'm <small>/ oy</small></span>
-              <span class="tag">6 oy</span>
             </div>
           </div>
           <div class="course">
@@ -307,6 +315,7 @@
 
   <footer>
     <div class="wrap">
+      <img class="logo" src="img/codial.png" alt="Codial" width="800" height="192">
       6-maktab, Farg'ona · Codial IT akademiyasi
     </div>
   </footer>
